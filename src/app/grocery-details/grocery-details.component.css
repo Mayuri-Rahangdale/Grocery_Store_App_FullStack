@@ -1,0 +1,67 @@
+/* General styles */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex; /* Center content horizontally and vertically */
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading styles */
+.container h2 {
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Paragraph styles */
+.container p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Strong element styles */
+.container p strong {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Link styles */
+.container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Button styles */
+.container button {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 15px;
+  background-color: #e8b1f3; /* Base background for buttons */
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.container button:hover {
+  background-color: #f10cb4;
+}
+
+/* Primary button (Back to List) */
+.container button.primary {
+  background-color: #6080a9; /* Blue gradient */
+  background-image: linear-gradient(to right, #54a0ff, #2980b9);
+  color: #fff;
+  border-color: #4585e2;
+}

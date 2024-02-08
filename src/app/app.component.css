@@ -1,0 +1,37 @@
+/* Overall container */
+.container {
+  align-items: center;
+  justify-content: center; /* Center elements horizontally */
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Heading with striking appearance */
+h1 {
+  font-family: "Open Sans", sans-serif; /* Modern font */
+  font-weight: 700; /* Bolder weight for emphasis */
+  color: #333; /* Dark text for contrast */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+/* Add button container */
+.addButton {
+  margin-top: 20px; /* Space below the heading */
+}
+
+/* Add button with inviting style */
+button {
+  background-color: #4caf50; /* Green background */
+  color: #fff; /* White text */
+  padding: 12px 20px; /* Generous padding */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Readable font size */
+  cursor: pointer; /* Hand cursor on hover */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Hover shadow */
+}
