@@ -1,0 +1,103 @@
+/* Overall container */
+div {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #f2f5f9; /* Lighter, airier background */
+  border-radius: 20px; /* Increased corner rounding */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+/* Heading with gradient and subtle shadow */
+h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Montserrat", sans-serif; /* Different font for heading */
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    #54a0ff,
+    #2980b9
+  ); /* Blue-violet gradient */
+  border-radius: 20px; /* Match container corners */
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* List styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #e5e5e5; /* Softer border color */
+  border-radius: 15px; /* Increased corner rounding */
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Button container (removed unnecessary .buttons class) */
+li > button {
+  display: flex;
+  gap: 16px;
+}
+
+/* Edit button with subtle green */
+button:first-child {
+  background-color: #e8f5e9; /* Lighter green */
+  color: #254a26; /* Darker green */
+  border: 2px solid #c8e6c9; /* Green border for definition */
+  transition: background-color 0.3s, border-color 0.3s;
+
+  &:hover {
+    background-color: #43b54a;
+    border-color: #31c836;
+  }
+}
+
+/* Details button with inviting blue */
+button:last-child {
+  /* Target the middle button */
+  background-color: #eaf6ff; /* Light blue */
+  color: #335d85; /* Darker blue */
+  border: 2px solid #bcdefa; /* Blue border for definition */
+  transition: background-color 0.3s, border-color 0.3s;
+
+  &:hover {
+    background-color: #7ba2d5;
+    border-color: #3e1ba7;
+  }
+}
+
+/* Delete button with contrasting red */
+button:nth-child(2) {
+  background-color: #f56565; /* Slightly softer red */
+  color: #fff;
+  border: 2px solid #f44336; /* Red border for definition */
+  transition: background-color 0.3s, border-color 0.3s;
+
+  &:hover {
+    background-color: #c53030;
+    border-color: #af7a19;
+  }
+}
+
+/* General button styles */
+button {
+  padding: 14px 20px;
+  cursor: pointer;
+  border-radius: 15px; /* Increased corner rounding */
+  font-size: 18px; /* Slightly larger font */
+  font-weight: 600;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+button:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}

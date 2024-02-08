@@ -1,0 +1,18 @@
+<!-- grocery-details.component.html -->
+<div class="container">
+  <h2>Grocery Details</h2>
+  <div *ngIf="grocery">
+    <p><strong>Name:</strong> {{ grocery.groceryName }}</p>
+    <p><strong>Cost Per Item:</strong> {{ grocery.costPerItem }}</p>
+    <p>
+      <strong>Items Available:</strong>
+      {{ grocery.groceryAmounts.itemsAvailable }}
+    </p>
+    <p>
+      <strong>Total Cost:</strong> {{ grocery.groceryAmounts.totalCostOfItems }}
+    </p>
+    <p><strong>State Name:</strong> {{ grocery.grocerySource.stateName }}</p>
+
+    <button class="button" [routerLink]="['/groceries']">Back to List</button>
+  </div>
+</div>

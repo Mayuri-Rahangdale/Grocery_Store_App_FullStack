@@ -1,0 +1,98 @@
+<div class="container">
+  <h2>Update Grocery</h2>
+  <form (ngSubmit)="updateGrocery()">
+    <div class="form-group">
+      <label for="groceryName">Grocery Name:</label>
+      <input
+        type="text"
+        id="groceryName"
+        name="groceryName"
+        [(ngModel)]="grocery.groceryName"
+        required
+      />
+    </div>
+
+    <!-- <div class="form-group">
+      <label for="grocerySource">Grocery Source:</label>
+      <input
+        type="text"
+        id="grocerySource"
+        name="grocerySource"
+        [(ngModel)]="grocery.grocerySource.stateName"
+        required
+      />
+    </div> -->
+
+    <div class="form-group">
+      <label for="grocerySource">Grocery Source:</label>
+      <select
+        id="grocerySource"
+        name="grocerySource"
+        [(ngModel)]="grocery.grocerySource.stateName"
+        required
+      >
+        <option *ngFor="let src of source" [value]="src.source_id">
+          {{ src.stateName + " " + src.source_id }}
+        </option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="sourceId">Source ID:</label>
+      <input
+        type="text"
+        id="sourceId"
+        name="sourceId"
+        [(ngModel)]="grocery.grocerySource.source_id"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="costPerItem">Cost Per Item:</label>
+      <input
+        type="number"
+        id="costPerItem"
+        name="costPerItem"
+        [(ngModel)]="grocery.costPerItem"
+        required
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="totalCost">Total Cost:</label>
+      <input
+        type="number"
+        id="totalCost"
+        name="totalCost"
+        [(ngModel)]="grocery.groceryAmounts.totalCostOfItems"
+        required
+        readonly
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="itemsAvailable">Items Available:</label>
+      <input
+        type="number"
+        id="itemsAvailable"
+        name="itemsAvailable"
+        [(ngModel)]="grocery.groceryAmounts.itemsAvailable"
+        required
+      />
+    </div>
+
+    <!-- <div class="form-group">
+      <label for="stateName">State ID:</label>
+      <input
+        type="text"
+        id="stateName"
+        name="stateName"
+        [(ngModel)]="grocery.grocerySource.source_id"
+        required
+      />
+    </div> -->
+
+    <button type="submit">Update Grocery</button>
+  </form>
+</div>

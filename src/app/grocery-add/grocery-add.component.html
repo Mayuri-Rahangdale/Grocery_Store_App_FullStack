@@ -1,0 +1,36 @@
+<div class="container">
+  <h2>Add New Grocery</h2>
+  <form [formGroup]="newGroceryForm" (ngSubmit)="submitForm()">
+    <label for="groceryName">Grocery Name:</label>
+    <input
+      type="text"
+      id="groceryName"
+      formControlName="groceryName"
+      required
+    />
+
+    <label for="costPerItem">Cost Per Item:</label>
+    <input type="number" id="costPerItem" formControlName="costPerItem" />
+
+    <div formGroupName="groceryAmounts">
+      <label for="itemsAvailable">Items Available:</label>
+      <input
+        type="number"
+        id="itemsAvailable"
+        formControlName="itemsAvailable"
+      />
+    </div>
+
+    <div formGroupName="grocerySource">
+      <!-- Add the dropdown for states -->
+      <label for="source_id">State Name:</label>
+      <select id="source_id" formControlName="source_id">
+        <option *ngFor="let state of states" [value]="state.source_id">
+          {{ state.stateName }}
+        </option>
+      </select>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>

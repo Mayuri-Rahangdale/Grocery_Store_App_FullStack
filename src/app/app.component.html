@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Grocery Store</h1>
+  <div class="addButton">
+    <button routerLink="groceries/add">Add New Grocery</button>
+  </div>
+
+  <!-- <nav>
+    <a routerLink="/groceries">Groceries</a>
+    <a routerLink="/groceries/add">Add New Grocery</a> -->
+  <!-- Iterate over groceries and generate edit links -->
+  <!-- <ng-container *ngFor="let grocery of groceries">
+      <a [routerLink]="['/edit', grocery.item_id]"
+        >Edit {{ grocery.groceryName }}</a
+      >
+    </ng-container>
+  </nav> -->
+  <router-outlet></router-outlet>
+</div>
